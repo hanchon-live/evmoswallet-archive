@@ -10,6 +10,7 @@ def test_wallet():
     assert wallet.eth_address == '0xe7e3654bc1ea915e7216d8193ef8dd7d5dae987f'
     assert wallet.evmos_address == 'evmos1ul3k2j7pa2g4uuskmqvna7xa04w6axrl85alz5'
     assert wallet.private_key == bytes.fromhex('8721109b7244925c0480f4172546b8b53dfe87845274070fbe8e6da739d1b813')
+    assert wallet.public_key == b'\x022-\xe1\xff\xb8\x8f\xb0 \x843_\xcd\x18$\x829\xb5\xf7qi\xbd\xde\x9bq?\x01\xe9\xea\x9eu\xe1b'  # NOQA: E501
 
 
 def test_sign():

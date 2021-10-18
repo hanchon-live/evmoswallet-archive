@@ -14,7 +14,6 @@ class Wallet:
             root_keys = HDKey.from_path(master_key, "m/44'/60'/0'")
 
             acct_priv_key = root_keys[-1]
-            # acct_pub_key = acct_priv_key.public_key
 
             acct_pub_key = HDKey.from_b58check(acct_priv_key.to_b58check())
             keys = HDKey.from_path(acct_pub_key, f'{0}/{0}')
@@ -22,6 +21,7 @@ class Wallet:
             self.eth_address = keys[-1].public_key.address()
             self.private_key = bytes.fromhex(keys[-1]._key.to_hex())
             self.evmos_address = eth_to_evmos(self.eth_address)
+            self.public_key = keys[-1].public_key.compressed_bytes
         else:
             # TODO: sopport for secp256k1
             raise NotImplementedError(f'{algo} is not supported!')
