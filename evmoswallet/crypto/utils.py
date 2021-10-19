@@ -27,7 +27,7 @@ def rand_bytes(n, secure=True):
     if secure:
         return os.urandom(n)
     else:
-        return bytes([random.randint(0, 255) for i in range(n)])
+        return bytes(random.randint(0, 255) for i in range(n))
 
 
 def bytes_to_str(b):
