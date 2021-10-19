@@ -17,7 +17,7 @@ def bech32_to_eth(wallet: str, prefix: str) -> Union[str, None]:
     words = convertbits(decoded[1], 5, 8, False)
     res = ''
     for w in words:
-        res = f'{res}{format(w, "x")}'
+        res = f'{res}{format(w, "x").zfill(2)}'
 
     return f'{ETH_PREFIX}{res}'
 
