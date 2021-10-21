@@ -1,5 +1,7 @@
 # Evmos wallet
 
+[![PyPI version](https://badge.fury.io/py/evmoswallet.svg)](https://badge.fury.io/py/evmoswallet)[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hanchon-live/evmoswallet/master.svg)](https://results.pre-commit.ci/latest/github/hanchon-live/evmoswallet/master)
+
 Evmos wallet utils for `python3.9+`.
 
 ## Installation
@@ -31,5 +33,5 @@ signed = wallet.sign(msg)
 
 ## References
 
-[pywallet](https://github.com/ranaroussi/pywallet/)
-[tow1](https://pypi.org/project/two1/)
+- [pywallet](https://github.com/ranaroussi/pywallet/)
+- [tow1](https://pypi.org/project/two1/)
