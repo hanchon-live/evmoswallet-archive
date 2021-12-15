@@ -1,8 +1,15 @@
 # Evmos wallet
 
-[![PyPI version](https://badge.fury.io/py/evmoswallet.svg)](https://badge.fury.io/py/evmoswallet)[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hanchon-live/evmoswallet/master.svg)](https://results.pre-commit.ci/latest/github/hanchon-live/evmoswallet/master)
+[![PyPI version](https://badge.fury.io/py/evmoswallet.svg)](https://badge.fury.io/py/evmoswallet) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hanchon-live/evmoswallet/master.svg)](https://results.pre-commit.ci/latest/github/hanchon-live/evmoswallet/master)
 
 Evmos wallet utils for `python3.9+`.
+
+## Requirements
+The cryptocurve dependency requires some libs to be built:
+
+```sh
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+```
 
 ## Installation
 
