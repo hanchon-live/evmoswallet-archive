@@ -8,7 +8,7 @@ Evmos wallet utils for `python3.9+`.
 The cryptocurve dependency requires some libs to be built:
 
 ```sh
-sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev autoconf libtool pkgconf
 ```
 
 ## Installation
