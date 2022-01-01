@@ -10,6 +10,7 @@ class EllipticCurveBase:
 
         The curves must be of the form: y^2 = x^3 + a*x + b.
     """
+
     def __init__(self, hash_function):
         self.hash_function = hash_function
 

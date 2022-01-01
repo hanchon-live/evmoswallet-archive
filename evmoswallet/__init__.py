@@ -8,6 +8,7 @@ from evmoswallet.eth.ethereum import HDPrivateKey
 
 
 class Wallet:
+
     def __init__(self, seed, algo='ethsecp256k1') -> None:
         if algo == 'ethsecp256k1':
             master_key = HDPrivateKey.master_key_from_mnemonic(seed)
