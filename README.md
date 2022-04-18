@@ -11,6 +11,11 @@ The cryptocurve dependency requires some libs to be built:
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev autoconf libtool pkgconf
 ```
 
+MacOS:
+```sh
+brew install autoconf automake libtool
+```
+
 ## Installation
 
 ```sh
