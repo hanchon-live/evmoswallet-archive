@@ -43,6 +43,18 @@ msg = bytes(...) # protobuf message
 signed = wallet.sign(msg)
 ```
 
+## MacOS openssl error
+If you get the error that says something like `the libcrypto is running on unsafe mode` and the process is aborted:
+
+```sh
+brew install openssl
+sudo ln -s /opt/homebrew/opt/openssl@1.1/lib/libcrypto.1.1.dylib /usr/local/lib
+sudo ln -s /opt/homebrew/opt/openssl@1.1/lib/libssl.1.1.dylib /usr/local/lib
+cd /usr/local/lib
+sudo ln -s libcrypto.3.dylib libcrypto.dylib
+sudo ln -s libssl.3.dylib libssl.dylib
+```
+
 ## References
 
 - [pywallet](https://github.com/ranaroussi/pywallet/)
