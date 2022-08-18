@@ -161,7 +161,7 @@ class EllipticCurveBase:
 
         while True:
             # Step h.1
-            T = bytes()
+            T = b''
 
             # Step h.2
             while 8 * len(T) < self.nlen:
