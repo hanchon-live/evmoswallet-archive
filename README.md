@@ -1,5 +1,7 @@
 # Evmos wallet
 
+Repo archived, moved to a monorepo under Evmos org. [evmospy](https://github.com/evmospy)
+
 [![PyPI version](https://badge.fury.io/py/evmoswallet.svg)](https://badge.fury.io/py/evmoswallet) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hanchon-live/evmoswallet/master.svg)](https://results.pre-commit.ci/latest/github/hanchon-live/evmoswallet/master)
 
 Evmos wallet utils for `python3.9+`.
